@@ -1,6 +1,8 @@
 class Sandbox {
   public static void main(String[] args) {
-    int randomNumber = (int)(Math.random()*10) + 1;
-    System.out.println(randomNumber);
+    double avg = 15 + 20;
+
+    avg /= 2;
+    System.out.println(avg);
   }
 }
