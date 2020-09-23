@@ -3,6 +3,6 @@ class Sandbox {
     double avg = 15 + 20;
 
     avg /= 2;
-    System.out.println(avg);
+    System.out.println(24+15+(double) 2.5);
   }
 }
