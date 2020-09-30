@@ -9,6 +9,27 @@ class Swing {
     // creating objects
     JFrame window = new JFrame("Lab 4");
     JPanel panel = new JPanel();
-    JButton bt1 = new JButton("Click Me!");
+    JButton btn1 = new JButton("Click Me!");
+    // color objects
+    Color megan = new Color(247, 198, 231);
+    Color sanjay = new Color(197, 75, 153);
+
+    // using objects
+    window.setSize(500, 500);
+    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    panel.setBackground(megan);
+
+    // button logic
+    btn1.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e) {
+        // method is event handler, passes event e
+        panel.setBackground(sanjay);
+      }
+    });
+
+    // build GUI and display
+    panel.add(btn1);
+    window.add(panel);
+    window.setVisible(true);
   }
 }
