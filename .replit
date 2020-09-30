@@ -1,1 +1,1 @@
-run = "javac Sandbox.java; java Sandbox"
+run = "javac Swing.java; java Swing"
