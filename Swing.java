@@ -23,13 +23,14 @@ class Swing {
     btn1.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         // method is event handler, passes event e
-        panel.setBackground(sanjay);
+        panel.setBackground((panel.getBackground() == megan) ? sanjay : megan);
       }
     });
 
     // build GUI and display
+    window.setVisible(true);
     panel.add(btn1);
     window.add(panel);
-    window.setVisible(true);
+    System.out.println("Hello?");
   }
 }
