@@ -7,29 +7,40 @@ import java.awt.event.ActionEvent;
 class Swing {
   public static void main(String[] args) {
     // creating objects
-    JFrame window = new JFrame("Lab 4");
+    JFrame window = new JFrame("☺");
     JPanel panel = new JPanel();
     JButton btn1 = new JButton("Click Me!");
+    JButton btn2 = new JButton("Change orientation");
     // color objects
-    Color megan = new Color(247, 198, 231);
-    Color sanjay = new Color(197, 75, 153);
+    Color orange = new Color(230, 194, 153);
+    Color green = new Color(163, 219, 201);
 
     // using objects
-    window.setSize(500, 500);
+    window.setSize(225, 400);
     window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    panel.setBackground(megan);
+    panel.setBackground(orange);
 
     // button logic
     btn1.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         // method is event handler, passes event e
-        panel.setBackground((panel.getBackground() == megan) ? sanjay : megan);
+        panel.setBackground((panel.getBackground() == orange) ? green : orange);
+      }
+    });
+    btn2.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e) {
+        // method is event handler, passes event e
+        window.setSize(400, 225);
+        //if (window.getSize().w == )
+        System.out.println(window.getSize());
+        //panel.setBackground((panel.getBackground() == orange) ? green : orange);
       }
     });
 
     // build GUI and display
     window.setVisible(true);
     panel.add(btn1);
+    panel.add(btn2);
     window.add(panel);
     System.out.println("Hello?");
   }
