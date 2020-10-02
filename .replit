@@ -1,1 +1,1 @@
-run = "javac Swing.java; java Swing"
+run = "cd unit2; javac SixColors.java; java SixColors"
