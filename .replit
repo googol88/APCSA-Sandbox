@@ -1,1 +1,1 @@
-run = "cd unit2/Pacman; javac Main.java; java Main"
+run = "cd unit2; javac RandGen.java; java RandGen"
