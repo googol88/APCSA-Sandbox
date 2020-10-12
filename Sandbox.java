@@ -1,8 +1,8 @@
 class Sandbox {
   public static void main(String[] args) {
-    double avg = 15 + 20;
+    String str = "D0ggo";
+    str = str.substring(1, 3);
 
-    avg /= 2;
-    System.out.println(24+15+(double) 2.5);
+    System.out.println(str);
   }
 }

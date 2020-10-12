@@ -1,1 +1,1 @@
-run = "cd unit2/Raindrops; javac Main.java; java Main"
+run = "javac Sandbox.java; java Sandbox"
