@@ -1,1 +1,1 @@
-run = "cd unit2; javac StrPractice.java; java StrPractice"
+run = "cd unit2; javac StaticMethods.java; java StaticMethods"
