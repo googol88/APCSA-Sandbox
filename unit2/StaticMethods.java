@@ -10,16 +10,13 @@ class StaticMethods {
 
   // time formatted as "HH:MM" e.g. "10:41", 20 -> "11:01"
   public static String calculateTime(String time, int minutes) {
-    int colonIndex = time.indexOf(":"); // colon used for 
+    int colonIndex = time.indexOf(":"); // colon used for indexing
     int currentMin = Integer.parseInt(time.substring(colonIndex+1));
     int currentHour = Integer.parseInt(time.substring(0, colonIndex));
-    int newMin = (currentMin+minutes)%60;
-    int newHour = currentHour+(currentMin+minutes)/60;
-    if(newMin < 10) {
-      return newHour+":0"+newMin;
-    } else {
-      return newHour+":"+newMin;
-    }
+
+    int newMin = (currentMin + minutes) % 60;
+    int newHour = (currentHour + (currentMin+minutes)/60 - 1) % 12 + 1; // add hour and hours past, mod 12 for 12 hour clock and -1 and +1 for adjusting for 12:00 rather than 00:00
+    return newHour+(newMin < 10 ? ":0" : ":")+newMin;
   }
 
   public static void main(String[] args) {
