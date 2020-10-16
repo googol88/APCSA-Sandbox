@@ -15,7 +15,7 @@ class StaticMethods {
     int currentHour = Integer.parseInt(time.substring(0, colonIndex));
 
     int newMin = (currentMin + minutes) % 60;
-    int newHour = (currentHour + (currentMin+minutes)/60 - 1) % 12 + 1; // add hour and hours past, mod 12 for 12 hour clock and -1 and +1 for adjusting for 12:00 rather than 00:00
+    int newHour = (currentHour + (currentMin+minutes)/60 - 1) % 12 + 1; // add hour and hours passed, mod 12 for 12 hour clock and -1 and +1 for adjusting for 12:00 rather than 00:00
     return newHour+(newMin < 10 ? ":0" : ":")+newMin;
   }
 
