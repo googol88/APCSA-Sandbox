@@ -1,1 +1,1 @@
-run = "cd unit3; javac LeapYear.java; java LeapYear"
+run = "cd unit3; javac APScore.java; java APScore"
