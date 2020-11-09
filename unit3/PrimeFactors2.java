@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 //BROKEN PROGRAM
-class PrimeFactors {
+class PrimeFactors2 {
   // precondition: n is a positive integer greater than1
   public static ArrayList<Integer> getPrimeFactors(int n) {
     // create empty list to hold prime factors
