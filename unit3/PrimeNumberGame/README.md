@@ -11,11 +11,11 @@ Make a game where a user tries to enter as many prime numbers as they can think 
 **Note**: *Assume* you have a working static `isPrime()` method. Do NOT write an `isPrime()` method.
 ```
 public class PrimeNumberGame {
-    public static boolean isPrime(int n) {
-        // implementation not shown
-    }
-    public static void main(String[] args) {
-        // TODO: Write Code :)
+  public static boolean isPrime(int n) {
+    // implementation not shown
+  }
+  public static void main(String[] args) {
+    // TODO: Write Code :)
   }
 }
 ```
