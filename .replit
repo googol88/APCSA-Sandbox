@@ -1,1 +1,1 @@
-run = "cd unit3; javac WhileLoopMethod.java; java WhileLoopMethod"
+run = "cd unit3; javac Stars.java; java Stars"
