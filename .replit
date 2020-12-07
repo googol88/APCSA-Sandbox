@@ -1,1 +1,1 @@
-run = "cd unit5/Student; javac Main.java; java Main"
+run = "cd unit5/ClassDesign/DefaultConstructors; javac Main.java; java Main"
