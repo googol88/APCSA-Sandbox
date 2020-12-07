@@ -19,6 +19,7 @@ public class Student {
     this.activeStudent = (studentTotal <= MAX_STUDENTS);
   }
 
+  // getters
   public double getGpa() {
     return this.gpa;
   }
