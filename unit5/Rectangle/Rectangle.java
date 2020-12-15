@@ -108,4 +108,14 @@ public class Rectangle {
       return true;
     return false;
   }
+
+  public boolean hasSameArea(Rectangle other) { // "other" AP naming convention
+    return this.getArea() == other.getArea();
+  }
+
+  @Override // will break if method not toString
+  public String toString() {
+    // 6 x 2 rectangle @(0, 0)
+    return width + " x " + height + " rectangle @(" + x + ", " + y + ")";
+  }
 }
