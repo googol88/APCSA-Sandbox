@@ -14,7 +14,7 @@ class Notes {
      * That's why you can't use a primitive type in ArrayList!!*/
     ArrayList stuff = new ArrayList(); // valid!
     stuff.add(1776);
-    stuff.add("I am from le olde past"); // mixing types - how evil >:-)
+    stuff.add("I am from le olde past"); // mixing types - how evil >:-) it's not type checked
     System.out.println(stuff);
   }
 }
