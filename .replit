@@ -1,1 +1,1 @@
-run = "cd unit7; javac SearchAlgorithms.java; java SearchAlgorithms"
+run = "cd unit7; javac SearchNames.java; java SearchNames"
