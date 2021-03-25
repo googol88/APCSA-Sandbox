@@ -39,17 +39,14 @@ public class Account
 */
 class SavingsAccount extends Account
 {
-  private String name;
-  private double balance;
   private double interestRate;
 
   public SavingsAccount(String name, double balance, double interestRate) {
     super(name, balance);
-    this.name = name;
-    this.balance = balance;
     this.interestRate = interestRate;
   }
 
+  @Override
   public String toString() {
     return super.toString() + ", " + interestRate;
   }
@@ -58,9 +55,8 @@ class SavingsAccount extends Account
   public boolean equals(Object other) {
     if (other instanceof SavingsAccount) {
       SavingsAccount otherAccount = (SavingsAccount) other;
-      return (this.balance == otherAccount.balance) &&
-              this.interestRate == otherAccount.interestRate &&
-              this.name.equals(otherAccount.name);
+      return super.equals(other) &&
+          this.interestRate == otherAccount.interestRate;
     }
     return false;
   }
